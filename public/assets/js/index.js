@@ -4,7 +4,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-const baseURL = "http://localhost:3001";
+const baseURL = "";
 
 if (window.location.pathname.endsWith("/notes.html")) {
   noteTitle = document.querySelector(".note-title");
@@ -12,8 +12,6 @@ if (window.location.pathname.endsWith("/notes.html")) {
   saveNoteBtn = document.querySelector(".save-note");
   newNoteBtn = document.querySelector(".new-note");
   noteList = document.querySelectorAll(".list-container .list-group");
-} else {
-  console.log("lame: " + window.location.pathname);
 }
 
 // Show an element
